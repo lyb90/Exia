@@ -3,7 +3,7 @@ version '2.0'
 
 buildscript {
   repositories {
-    mavenCentral()
+    maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
     jcenter()
   }
   dependencies {
@@ -13,6 +13,9 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'com.github.johnrengelman.shadow'
+apply plugin: 'maven'
+
+
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -24,7 +27,7 @@ jar {
 }
 
 repositories {
-  mavenCentral()
+    maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
 }
 
 dependencies {
