@@ -4,21 +4,38 @@ import java.io.Serializable;
 
 public class A implements Serializable {
     private static String a = "";
+    private String ax = "";
 
-    private void a(String a) throws Exception {
-        System.out.println(this);
+//d
+
+    private static class B extends Exception {
+        public static String b = "xx";
+        public String bx = "xx";
     }
-//    private void writeObject(java.io.ObjectOutputStream s)
-//            throws IOException {
-//        s.writeObject(this);
-//    }
-//
-//    private void readObject(java.io.ObjectInputStream s)
-//            throws IOException, ClassNotFoundException {
-//        s.readObject();
-//    }
+    //xx
 
-    private class B extends Exception {
+    private class C extends Number {
+        public String cx = "xx";
 
+        @Override
+        public int intValue() {
+            return 0;
+        }
+
+        @Override
+        public long longValue() {
+            return 0;
+        }
+
+        @Override
+        public float floatValue() {
+            return 0;
+        }
+
+        @Override
+        public double doubleValue() {
+            return 0;
+        }
     }
 }
+//}
